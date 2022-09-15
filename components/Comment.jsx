@@ -32,6 +32,7 @@ export default function Comment(props) {
 
       {props.reply.map((x) => (
         <Reply
+          key={x.username}
           imgsrc={x.userImagePath}
           name={x.username}
           reply={x.replyText}

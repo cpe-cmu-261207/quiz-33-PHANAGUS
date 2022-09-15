@@ -22,6 +22,7 @@ export default function Home() {
 
         {comments.map((x) => (
           <Comment
+            key={x.username}
             imgsrc={x.userImagePath}
             name={x.username}
             comment={x.commentText}
